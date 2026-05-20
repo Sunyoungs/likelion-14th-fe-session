@@ -4,7 +4,7 @@ import Logo from './tving.svg';
 
 function Header() {
   return (
-    <header style={{ position: 'fixed', backgroundColor: 'black', display: 'flex', top: 0, left: 0, width: '100vh', zIndex: 10, padding: '7px 5px' }}>
+    <header style={{ position: 'fixed', backgroundColor: 'black', display: 'flex', top: 0, left: 0, width: '100%', boxSizing: 'border-box', zIndex: 10, padding: '7px 5px' }}>
       <Link to="/"><img src={Logo} style={{ width: '100px', height: 'auto' }} /></Link>
       <nav style={{ display: 'flex', gap: '20px', margin: 'auto 10px' }}>
         <Link to="/drama" style={{ color: '#d9d9d9', textDecoration: 'none' }}>드라마</Link>
